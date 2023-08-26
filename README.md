@@ -79,3 +79,16 @@
             "editor.defaultFormatter": "esbenp.prettier-vscode"
         }
         ```
+
+## 3. Create API instance base
+
+-   Install packages:
+    ```shell
+    npm i axios minimatch
+    ```
+-   Create axios client instance (for request API from client). We will create requests to next server and handle logic with backend API on server side.
+    -   Create `configs/client/index.ts` and `configs/server/index.ts` files (save app config for server and client side).
+    -   Create `apiClient/errorHandler.ts` file (handler error on client side).
+    -   Create `apiClient/index.ts` file (API instance for request to next server).
+    -   Create `api/utils/index.ts` file (save utilities serve for next api).
+    -   Create `api/[...url]/route.ts` file (handler logic with backend API).
